@@ -112,15 +112,19 @@ body {
 		}
 					
 /* Modifies the DIV layer sizes - intro is the text on left, mphoto is the right side bar */			
-		
+		.mainintro, .maincontainer {
+			display: flex;
+			justify-content: center;
+		}
 		.intro {
 			float: left;
-			width: 50%;
+			width: 60%;
 			padding: 0 20px;
 		}
 		.mphoto {
-		    width: 40%;
+		    width: 30%;
 		    overflow:auto;
+			padding: 0 20px;
 		}
 		.responsivemaria {
 		    width: 100%;
@@ -237,14 +241,6 @@ img.footicon {
 }
 
 /* div style for about me and sidebar photos */
-		#maincontainer {
-		  width:100%;
-		  overflow:auto;
-		}
-		div.mariaphoto {
-		  width:30%;
-		  overflow:auto;
-		}
 
 		div.blurb p {
 			text-align: left;
@@ -260,15 +256,18 @@ img.footicon {
 		  border-radius: 25px;
 		  padding: 0px;	
 		}		
+
 		.blurb {
 			float: left;
 			width: 60%;
 			padding: 0 20px;
 		}
 		.mariaphoto {
-			margin: auto;
+		    width: 30%;
+		    overflow:auto;
 			padding: 0 20px;
 		}
+
 
 /* Form Style - What a pain in the dick. */			
 input[type=text], input[type=email], input[type=tel], textarea  {
