@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Author: Maria Castillo
+Date: 23 October 2025
+File Name: stylesheet.css
+*/
+
+/* Style rule for box sizing applies to all elements */
+* {
+box-sizing: border-box;
+}	
+
+/* CSS Reset */
+h1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
+	font-size: 4em;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 1.75em;
+}
+ p.backbutt, th {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 1em;
+}
+
+ p.backbutt, a {
+	color: #000;
+}
+
+
+main, body, table {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+
+body {
+	background-color: #04ADBF;
+}
+			
+/* The red borders are for my reference and will be removed with the final project. */	
+
+		header {
+		  border: 5px solid #000; 
+		  padding-top: 25px;
+		  padding-bottom: 25px;
+		  background: #fff;
+		  width: 90%;
+		  margin: auto;
+		}	
+			
+/* Modifies text segments listed */			
+
+		p, h2, h1, figcaption, h3 {
+			text-align: center;
+			color: #000;
+			line-height: 1.8;
+		}
+
+/*div intro p only modifies the paragraph on the intro page div class intro and all p elements*/
+		div.intro p{
+			text-align: center;
+		}
+		
+/* Modifies all images to look the same */			
+			
+		img {
+			  border: 5px solid #000;
+			  border-radius: 25px;
+			  padding: 0px;
+			  width: 200px;
+			  margin-left: auto;
+			  margin-right: auto;
+			  margin-bottom: 10px;
+			  display: block;
+		}
+
+		img.foodtable {
+			  border: 5px solid #000;
+			  border-radius: 25px;
+			  padding: 0px;
+			  width: 500px;
+			  margin-left: auto;
+			  margin-right: auto;
+			  margin-bottom: 10px;
+			  display: block;
+		}
+					
+/* Modifies the DIV layer sizes - intro is the text on left, mphoto is the right side bar */			
+		
+		.intro {
+			float: left;
+			width: 50%;
+			padding: 0 20px;
+		}
+		.mphoto {
+		    width: 40%;
+		    overflow:auto;
+		}
+		.responsivemaria {
+		    width: 100%;
+		    max-width: 400px;
+		    height: auto;
+		    border: 5px solid #000;
+		    border-radius: 25px;
+		    padding: 0px;	
+		}		
+			
+/* Modify Navigation */		
+		
+		nav {
+			 border: 5px solid #000; 
+			 background: #fff;
+		  	 font-family: "Gabarito", sans-serif;
+ 			 font-optical-sizing: auto;
+ 			 font-weight: 800;
+ 			 font-style: normal;
+		     width: 90%;
+		     margin: auto;
+		}	
+			
+		nav li {
+			display: inline-block;
+			border-top: none;
+			font-size: 2em;
+			padding: 0px;
+			text-align: center; 			
+		}	
+			
+		nav li a {
+			display: block;
+			color: #000;
+			text-align: center;
+			text-decoration: none;
+			padding: 0 1.75em; 
+		}
+			
+		nav ul {
+			list-style-type: none;
+			text-align: center;
+			display: flex;
+ 			justify-content: center; 
+		}
+
+		nav ul li a:hover {
+  			background-color: #111111;
+			color: #fff;
+}
+/* Modifies main body content */			
+			
+		main {
+		  border: 5px solid #000;
+		  background: #fff;
+		  padding-top: 30px;
+		  padding-bottom: 25px;
+		  width: 90%;
+		  margin: auto;
+		}			
+			
+/* Modifies the footer area. */			
+			
+		footer {
+		  border: 5px solid #000; 
+		  background: #fff;
+		  padding-bottom: 25px;
+		  padding-top: 25px;
+		  font-family: "Newsreader", serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		  font-size: .75em;
+		  width: 90%;
+		  margin: auto;
+		}
+
+		footer a {
+			color: #000;
+		}
+
+			
+
+/* div style for photo html page */
+		div.photothumb {
+		  width:100%;
+		  overflow:auto;
+		}
+
+		div.photothumb div{
+		  width:33.333%;  
+		  margin: auto;
+		  float: left;
+		}
+		.phothumb {
+		    width: 75%;
+		    max-width: 400px;
+		    height: auto;
+		    border: 5px solid #000;
+		    border-radius: 25px;
+		    padding: 0px;	
+		}	
+
+img.thumb img {
+	margin: auto;
+}
+img.footicon {
+	margin: auto;
+	width: 50px;
+	border: 0;
+	display: inline-block;
+	padding: 0 10px;
+	
+}
+
+/* div style for about me and sidebar photos */
+		#maincontainer {
+		  width:100%;
+		  overflow:auto;
+		}
+		div.mariaphoto {
+		  width:30%;
+		  overflow:auto;
+		}
+
+		div.blurb p {
+			text-align: left;
+			text-indent: 50px;
+			line-height: 1.8;
+		}
+
+		.responsiveimg {
+		  width: 100%;
+		  max-width: 400px;
+		  height: auto;
+		  border: 5px solid #000;
+		  border-radius: 25px;
+		  padding: 0px;	
+		}		
+		.blurb {
+			float: left;
+			width: 60%;
+			padding: 0 20px;
+		}
+		.mariaphoto {
+			margin: auto;
+			padding: 0 20px;
+		}
+
+/* Form Style - What a pain in the dick. */			
+input[type=text], input[type=email], input[type=tel], textarea  {
+	width: 100%;
+	padding: 12px;
+	margin: 10px 0;
+	box-sizing: border-box;
+	border: 2px solid #000;
+	border-radius: 5px;
+	resize: none;
+}	
+.form-grid {
+	  border: 5px solid;
+	  padding: 5px 20px; 
+	  width: 35%;
+	  overflow: auto;
+	  margin: auto;
+	  background: #FFF;
+	  resize: none;
+}
+fieldset {
+	border: none;
+	background: #FFF;
+}
+ input[type=submit], input[type=reset] {
+	  background-color: #F2A30F;
+	  border: 2px solid #000;
+	  color: white;
+	  padding: 15px 35px;
+	  text-decoration: none;
+	  margin: 5px 37%;
+	  cursor: pointer;
+	  border-radius: 10px;
+}
+
+
+/* Photo table design page*/
+table, th, td {
+  border: 5px solid white;
+  border-collapse: collapse;
+  text-align: center;
+	margin: auto;
+	padding: 15px;
+}
+th {
+  background-color: #BBDA45;
+}
+td {
+  background-color: #E1F2BD;
+}		
