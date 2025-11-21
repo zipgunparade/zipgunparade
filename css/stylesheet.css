@@ -16,6 +16,7 @@ body, header, nav, main, footer, img, h2, ul, section, aside, figure, figcaption
 		margin: 0;
 		padding: 0;
 		border: 0;
+		overflow: auto;
 }
 
 * {
@@ -45,7 +46,7 @@ img {
 
 figure {
 		position: relative;
-		max-width: auto;
+		max-width: 100%;
 		margin: 2% auto;
 		border: none;
 }
@@ -57,10 +58,9 @@ header h1 {
 	padding: 0;
 	border: 0;
     font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: medium;
+    font-weight: 600;
     font-style: normal;
-	font-size: 7vw;
+	font-size: 2.5em;
 }
 
 main h2 {
@@ -68,10 +68,9 @@ main h2 {
 	padding: 0;
 	border: 0;
     font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-	font-size: 2.5vw;
+	font-size: .75em;
 }
 
 /* Style rules for navigation area */
@@ -81,7 +80,6 @@ nav {
 	 border: 5px solid #000; 
 	 background: #fff;
 	 font-family: "Gabarito", sans-serif;
-	 font-optical-sizing: auto;
 	 font-weight: 800;
 	 font-style: normal;
 	 width: 90%;
@@ -122,7 +120,7 @@ main {
 }		
 
 main p {
-		font-size: 1.5vw;
+		font-size: .75em;
 }
 
 
@@ -131,10 +129,9 @@ main p {
 	padding: 0;
 	border: 0;
     font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-	font-size: 1em;
+	font-size: .5em;
 }
 
  p.backbutt, a {
@@ -144,7 +141,6 @@ main p {
 
 main, body, table {
   font-family: "Newsreader", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 1.2em;
@@ -158,8 +154,8 @@ body {
 
 		header {
 		  border: 5px solid #000; 
-		  padding-top: 25px;
-		  padding-bottom: 25px;
+		  padding-top: 10px;
+		  padding-bottom: 10px;
 		  background: #fff;
 		  width: 90%;
 		  margin: auto;
@@ -172,11 +168,12 @@ body {
 			color: #000;
 			line-height: 1.8;
 		}
+
 		figcaption {
 			text-align: center;
 			color: #000;
-			font-size: .5em;
-			line-height: .5;
+			font-size: .3em;
+			line-height: .7;
 		}
 
 /*div intro p only modifies the paragraph on the intro page div class intro and all p elements*/
@@ -190,7 +187,6 @@ body {
 			  border: 5px solid #000;
 			  border-radius: 25px;
 			  padding: 0px;
-			  width: 200px;
 			  margin-left: auto;
 			  margin-right: auto;
 			  margin-bottom: 10px;
@@ -201,7 +197,7 @@ body {
 			  border: 5px solid #000;
 			  border-radius: 25px;
 			  padding: 0px;
-			  width: 500px;
+			  width: 100%;
 			  margin-left: auto;
 			  margin-right: auto;
 			  margin-bottom: 10px;
@@ -212,17 +208,18 @@ body {
 					
 /* Modifies the DIV layer sizes - intro is the text on left, mphoto is the right side bar */			
 		.mainintro, .maincontainer {
-			display: flex;
+			display: block;
 			justify-content: center;
 		}
-		.intro {
-			float: left;
-			width: 60%;
+		.intro, .blurb {
+			margin: auto;
+			width: 90%;
 			padding: 0 20px;
 		}
-		.mphoto {
-		    width: 30%;
+		.mphoto, .mariaphoto {
+		    width: 90%;
 		    overflow:auto;
+			margin: auto;
 			padding: 0 20px;
 		}
 		.responsivemaria {
@@ -241,7 +238,7 @@ body {
 		nav li {
 			display: inline-block;
 			border-top: none;
-			font-size: 2.5vw;
+			font-size: 1em;
 			padding: 0px;
 			text-align: center; 			
 		}	
@@ -251,7 +248,7 @@ body {
 			color: #000;
 			text-align: center;
 			text-decoration: none;
-			padding: 0 1.75em; 
+			padding: 0px .3em; 
 		}
 			
 		nav ul {
@@ -282,13 +279,12 @@ body {
 		footer {
 		  border: 5px solid #000; 
 		  background: #fff;
-		  padding-bottom: 25px;
-		  padding-top: 25px;
+		  padding-bottom: 10px;
+		  padding-top: 10px;
 		  font-family: "Newsreader", serif;
-		  font-optical-sizing: auto;
 		  font-weight: 400;
 		  font-style: normal;
-		  font-size: 1vw;
+		  font-size: .5em;
 		  width: 90%;
 		  margin: auto;
 		}
@@ -300,24 +296,14 @@ body {
 			
 
 /* div style for photo html page */
-		div.photothumb {
-		  width:100%;
-		  overflow:auto;
-		}
 
-		div.photothumb div{
-		  width:33.333%;  
-		  margin: auto;
-		  float: left;
-		}
-		.phothumb {
-		    width: 75%;
-		    max-width: 400px;
-		    height: auto;
-		    border: 5px solid #000;
-		    border-radius: 25px;
-		    padding: 0px;	
-		}	
+
+.photothumb {
+	width: 90%;
+	overflow: auto;
+	margin: auto;
+}
+
 
 img.thumb img {
 	margin: auto;
@@ -348,16 +334,7 @@ img.footicon {
 		  padding: 0px;	
 		}		
 
-		.blurb {
-			float: left;
-			width: 60%;
-			padding: 0 20px;
-		}
-		.mariaphoto {
-		    width: 30%;
-		    overflow:auto;
-			padding: 0 20px;
-		}
+
 
 
 /* Form Style */			
@@ -373,7 +350,7 @@ input[type=text], input[type=email], input[type=tel], textarea  {
 .form-grid {
 	  border: 5px solid;
 	  padding: 5px 20px; 
-	  width: 35%;
+	  width: 90%;
 	  overflow: auto;
 	  margin: auto;
 	  background: #FFF;
@@ -401,7 +378,7 @@ table, th, td {
   border-collapse: collapse;
   text-align: center;
 	margin: auto;
-	padding: 15px;
+	padding: 10px 25px;
 }
 th {
   background-color: #BBDA45;
@@ -429,6 +406,152 @@ td {
 			display: none;
 		}
 	
+	header h1 {
+		font-size: 3em
+	}
+	
+main, body, table {
+
+  font-size: 1.2em;
+	}	
+
+main h2 {
+
+	font-size: 1.5em;
+	}	
+	
+main p {
+		font-size: .75em;
+	}
+	
+figcaption {
+	font-size: .6em;
+	line-height: .5;
+	}	
+	
+p.backbutt, th {
+	font-size: .75em;
+	}
+	
+	.mainintro, .maincontainer {
+		display: block;
+		justify-content: center;
+	}
+	.intro, .blurb {
+		margin: auto;
+		width: 90%;
+		padding: 0 20px;
+		overflow: auto;
+	}
+	.mphoto {
+		width: 90%;
+		overflow:auto;
+		margin: auto;
+		padding: 0 20px;
+		display: block;
+	}
+	.mariaphoto {
+		width: 33.333%;
+		margin: auto;
+		float: left;
+		padding: 0 20px;
+	}
+	.responsivemaria {
+		width: 100%;
+		max-width: 400px;
+		height: auto;
+		border: 5px solid #000;
+		border-radius: 25px;
+		padding: 0px;	
+	}		
+
+	
+	
+	img {
+		  border: 5px solid #000;
+		  border-radius: 25px;
+		  padding: 0px;
+		  width: 90%;
+		  margin-left: auto;
+		  margin-right: auto;
+		  margin-bottom: 10px;
+		  display: block;
+	}
+
+	img.foodtable {
+		  border: 5px solid #000;
+		  border-radius: 25px;
+		  padding: 0px;
+		  width: 100%;
+		  margin-left: auto;
+		  margin-right: auto;
+		  margin-bottom: 10px;
+		  display: block;
+	}	
+	
+		nav li {
+			display: inline-block;
+			border-top: none;
+			font-size: 1em;
+			padding: 0px;
+			text-align: center; 			
+		}	
+			
+		nav li a {
+			display: block;
+			color: #000;
+			text-align: center;
+			text-decoration: none;
+			padding: 0px .3em; 
+		}	
+	
+	
+		footer {
+		  border: 5px solid #000; 
+		  background: #fff;
+		  padding-bottom: 20px;
+		  padding-top: 20px;
+		  font-family: "Newsreader", serif;
+		  font-weight: 400;
+		  font-style: normal;
+		  font-size: .75em;
+		  width: 90%;
+		  margin: auto;
+		}
+
+/* Form Style */			
+input[type=text], input[type=email], input[type=tel], textarea  {
+	width: 100%;
+	padding: 12px;
+	margin: 10px 0;
+	box-sizing: border-box;
+	border: 2px solid #000;
+	border-radius: 5px;
+	resize: none;
+}	
+.form-grid {
+	  border: 5px solid;
+	  padding: 5px 20px; 
+	  width: 90%;
+	  overflow: auto;
+	  margin: auto;
+	  background: #FFF;
+	  resize: none;
+}
+fieldset {
+	border: none;
+	background: #FFF;
+}
+ input[type=submit], input[type=reset] {
+	  background-color: #F2A30F;
+	  border: 2px solid #000;
+	  color: white;
+	  padding: 15px 35px;
+	  text-decoration: none;
+	  margin: 5px 37%;
+	  cursor: pointer;
+	  border-radius: 10px;
+}	
 	
 }
 
@@ -436,6 +559,157 @@ td {
 /* Media Query for Desktop Viewport */
 @media only screen and (min-width: 769px) {
 	/* Desktop Viewport: Style rule for header */
+
+header h1 {
+	font-size: 5em
+	}
+	
+main, body, table {
+
+  font-size: 1.2em;
+	}	
+	
+main h2 {
+
+	font-size: 2em;
+	}
+	
+main p {
+		font-size: 1em;
+	}
+	
+figcaption {
+	font-size: .7em;
+	line-height: .5;
+	}	
+	
+ p.backbutt, th {
+	font-size: 1em;
+	}	
+	
+	.mainintro, .maincontainer {
+		display: flex;
+	}
+	.intro, .blurb {
+		float: left;
+		width: 60%;
+		padding: 0 20px;
+		overflow: auto;
+	}
+	.mphoto, .mariaphoto {
+		width: 30%;
+		padding: 0 20px;
+		display: inline;
+	}
+	
+	
+	
+	.responsivemaria {
+		width: 100%;
+		max-width: 400px;
+		height: auto;
+		border: 5px solid #000;
+		border-radius: 25px;
+		padding: 0px;	
+	}
+
+	img {
+		  border: 5px solid #000;
+		  border-radius: 25px;
+		  padding: 0px;
+		  width: 200px;
+		  margin-left: auto;
+		  margin-right: auto;
+		  margin-bottom: 10px;
+		  display: block;
+	}
+
+	img.foodtable {
+		  width: 500px;
+	}	
+	
+	nav li {
+		font-size: 2em;
+		padding: 0px;			
+	}
+	
+	nav li a {
+		padding: 0 1em; 
+	}	
+	
+	
+		footer {
+		  font-size: 1em;
+		  width: 90%;
+		}
+
+	/* Form Style */			
+input[type=text], input[type=email], input[type=tel], textarea  {
+	width: 100%;
+	padding: 12px;
+	margin: 10px 0;
+	box-sizing: border-box;
+	border: 2px solid #000;
+	border-radius: 5px;
+	resize: none;
+}	
+.form-grid {
+	  border: 5px solid;
+	  padding: 5px 20px; 
+	  width: 50%;
+	  overflow: auto;
+	  margin: auto;
+	  background: #FFF;
+	  resize: none;
+}
+fieldset {
+	border: none;
+	background: #FFF;
+}
+ input[type=submit], input[type=reset] {
+	  background-color: #F2A30F;
+	  border: 2px solid #000;
+	  color: white;
+	  padding: 15px 35px;
+	  text-decoration: none;
+	  margin: 5px 37%;
+	  cursor: pointer;
+	  border-radius: 10px;
+	}
+	
+		header {
+		  padding-top: 25px;
+		  padding-bottom: 25px;
+		}		
+/* Modifies the footer area. */			
+			
+		footer {
+		  padding-bottom: 25px;
+		  padding-top: 25px;
+		  font-size: 1em;
+		  width: 90%;
+		}
+
+/* div style for photo html page */
+		div.photothumb {
+		  width:100%;
+		  overflow:auto;
+		}
+
+		div.photothumb div{
+		  width:33.333%;  
+		  margin: auto;
+		  float: left;
+		}
+		.phothumb {
+		    width: 75%;
+		    max-width: 400px;
+		    height: auto;
+		    border: 5px solid #000;
+		    border-radius: 25px;
+		    padding: 0px;	
+		}	
+	
 }
 	
 
@@ -447,4 +721,3 @@ td {
     color: #000;
 	}
 }
-
